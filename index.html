@@ -8,12 +8,19 @@
 </head>
 <body>
     <h1>Separar Strings</h1>
-    <textarea id="inputArea" rows="10" cols="50" placeholder="Pega los strings aqui..."></textarea><br>
-    <button id="procesar-separacion">Procesar separación</button>
-    <button id="limpiar-input">Limpiar</button>
-    <h2>Resultado</h2>
-    <textarea id="outputArea" rows="10" cols="50" readonly></textarea>
-    <button id="limpiar-output">Limpiar</button>
+	<main>
+		<section id="input-section">
+			<h2>Ingreso de datos</h2>
+			<textarea id="inputArea" rows="10" cols="50" placeholder="Pega los strings aqui..."></textarea><br>
+			<button id="procesar-separacion">Procesar separación</button>
+			<button id="limpiar-input">Limpiar</button>
+		</section>
+		<section id="output-section">
+			<h2>Resultado</h2>
+			<textarea id="outputArea" rows="10" cols="50" readonly></textarea>
+			<button id="limpiar-output">Limpiar</button>
+		</section>
+	</main>
     <script src="app.js"></script>
 </body>
 </html>
