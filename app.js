@@ -39,10 +39,3 @@ function procesarString() {
     outputArea.value = resultados.map(resultado => resultado.join('\t')).join('\n');
 }
 
-
-
-
-// ej
-let ingreso = "SIAO20182020685";
-let res = separarLetrasNums(ingreso);
-console.log(res);
