@@ -1,0 +1,39 @@
+h1, h2 {
+	text-align: center;
+	margin: 10px;
+}
+
+body {
+	background-color: #222528;
+	color: #d2cea7;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+}
+
+section {
+	background-color: #364046;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+button {
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: #d4e1ff;
+	border: none;
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	padding: 20px 20px 0px 20px;
+}
