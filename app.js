@@ -3,12 +3,18 @@ const limpiarInput = document.querySelector("#limpiar-input");
 const limpiarOutput = document.querySelector("#limpiar-output");
 const inputArea = document.querySelector("#inputArea");
 const outputArea = document.querySelector("#outputArea");
+const copiarBtn = document.querySelector("#copiar-output");
 
 
+//procesar btn
 procesar.addEventListener('click', procesarString);
 
+//limpiar btns
 limpiarInput.addEventListener('click', () => inputArea.value = "");
 limpiarOutput.addEventListener('click', () => outputArea.value = "");
+
+// copiar btn
+copiarBtn.addEventListener('click', copiar);
 
 function separarLetrasNums(input) {
     // regex
@@ -37,5 +43,14 @@ function procesarString() {
     });
 
     outputArea.value = resultados.map(resultado => resultado.join('\t')).join('\n');
+}
+
+async function copiar() {
+	try {
+		await navigator.clipboard.writeText(outputArea.value);
+	}
+	catch(e) {
+		console.error("ha ocurrido un error al copiar, Error:", e.message);
+	}
 }
 
